@@ -11,15 +11,15 @@ repositories {
 }
 
 group = "G-Earth"
-version = "1.0.1"
-description = "G-Wasm"
+version = "1.0.3"
+description = "G-Wasm-Minimal"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 publishing {
     publications.create<MavenPublication>("maven") {
         groupId = "dorving.gearth"
-        artifactId = "gwasm"
-        version = "1.0.1"
+        artifactId = "wasm-minimal"
+        version = "1.0.3"
         from(components["java"])
     }
 }
